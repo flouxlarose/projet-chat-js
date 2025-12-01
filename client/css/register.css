@@ -1,0 +1,53 @@
+@font-face {
+    font-family: "Starjedi";
+    src: url("../../fonts/starjedi/Starjedi.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+html{
+    background-color: black;
+    height: 100%;
+    background-image: url('../img/kamino.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+body{
+    height: 100%;
+    margin: 0;
+}
+
+form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+}
+
+input {
+    margin: 10px;
+    padding: 5px;
+    font-family: "Starjedi", sans-serif;
+}
+
+button {
+    padding: 5px;
+    background-color: black;
+    font-size: large;
+    color: yellow;
+    font-family: "Starjedi", sans-serif;
+}
+
+.pluie{
+    position: fixed;
+    width: 2px;
+    height: 20px;
+    background: linear-gradient(to bottom, rgba(174,194,224,0.7), rgba(174,194,224,0));  /* a tester pour le gradient sinon juste gray... */
+    z-index: -1;
+    border-radius: 1px;
+}

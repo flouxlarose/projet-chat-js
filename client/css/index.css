@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "Starjedi";
+    src: url("../../fonts/starjedi/Starjedi.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 html{
     background-color: black;
     height: 100%;
@@ -5,4 +12,9 @@ html{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+a {
+    font-size: large;
+    color: yellow;
+    font-family: "Starjedi", sans-serif;
 }
