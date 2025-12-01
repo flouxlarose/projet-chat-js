@@ -1,0 +1,8 @@
+html{
+    background-color: black;
+    height: 100%;
+    background-image: url('../img/Endor_DS2_Playmat_XWM.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
