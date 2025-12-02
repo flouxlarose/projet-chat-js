@@ -2,7 +2,7 @@ class Goutte {
     constructor() {
         this.x = Math.random() * window.innerWidth;
         this.y = 0;
-        this.speedY = Math.random() * 4 - 10; // Vitesse de chute entre -10 et -6
+        this.speedY = Math.random() * 4 - 10; // Vitesse de chute entre -15 et -11 vitesse de basse pour egaliser la pluie
         this.node = document.createElement('div');
         this.node.classList.add('goutte');
         document.body.append(this.node);
@@ -15,7 +15,7 @@ class Goutte {
     reset(){
         this.y = 0;
         this.x = Math.random() * window.innerWidth;
-        this.speedY = Math.random() * 4 - 7;
+        this.speedY = Math.random() * 4 - 10;
         this.node.style.left = this.x + 'px';
     }
 

@@ -2,7 +2,7 @@ let spriteList = [];
 
 
 window.addEventListener("load", () => {
-    for (let i=0; i<400; i++){
+    for (let i=0; i<1000; i++){
         let goutte = new Goutte();
         spriteList.push(goutte);
     }
