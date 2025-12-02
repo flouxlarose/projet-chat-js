@@ -48,6 +48,5 @@ button {
     width: 2px;
     height: 20px;
     background: linear-gradient(to bottom, rgba(174,194,224,0.7), rgba(174,194,224,0));  /* a tester pour le gradient sinon juste gray... */
-    z-index: -1;
     border-radius: 1px;
 }

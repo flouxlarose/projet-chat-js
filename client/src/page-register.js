@@ -1,6 +1,4 @@
 import {register} from './chat-api';
-let spriteList = [];
-
 
 
 window.addEventListener("load", () => {
@@ -9,16 +7,4 @@ window.addEventListener("load", () => {
             // L'enregistrement est complétée (la requête)
         });
     }
-
-    tick();
 })
-
-// Création des gouttes de pluie
-const tick = () => {
-    for(let i=0; i<10; i++){
-        let goutte = new Goutte();
-        spriteList.push(goutte);
-    }
-
-    window.requestAnimationFrame(tick); 
-}

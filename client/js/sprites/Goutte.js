@@ -2,7 +2,7 @@ class Goutte {
     constructor() {
         this.x = Math.random() * window.innerWidth;
         this.y = 0;
-        this.speedY = Math.random() * 4 - 7; // Vitesse de chute entre -7 et -3
+        this.speedY = Math.random() * 4 - 10; // Vitesse de chute entre -10 et -6
         this.node = document.createElement('div');
         this.node.classList.add('goutte');
         document.body.append(this.node);
