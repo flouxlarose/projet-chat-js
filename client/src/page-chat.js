@@ -11,7 +11,16 @@ window.addEventListener("load", () => {
 
 // Lorsqu'un nouveau message doit être affiché à l'écran, cette fonction est appelée
 const newMessage = (fromUser, message, isPrivate) => {
-    console.log(fromUser, message, isPrivate);
+    let nodeChat = document.getElementById("chat");
+    let nodeMessage = document.createElement("div");
+    if(isPrivate){
+        nodeMessage.classList.add("prive");
+    }
+    else{
+        nodeMessage.classList.add("publique");
+    }
+    nodeChat.innerHTML += `<div class="${isPrivate ? "private" : "public"}">${fromUser} : ${message}</div>`;
+
 }
 
 // À chaque 2-3 secondes, cette fonction est appelée. Il faudra donc mettre à jour la liste des membres
