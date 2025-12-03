@@ -24,13 +24,30 @@ class StarDestroyer {
         this.node.style.left = this.x + "px";
 
         document.querySelector("#container").append(this.node);
+        
+        this.node.addEventListener("click", (e) => {
+            this.triggerVitesseLumiere(e);
+        });
+    }
+
+    triggerVitesseLumiere(e){
+        if (!this.hit){
+            this.hit = true;
+            setTimeout(() => {
+                this.hit = false;
+                this.speed *= 50;
+            }, 1000);
+            
+        }
     }
 
     tick() {
         let alive = true;
 
-        this.x += this.type == "left" ? this.speed : -this.speed;
-        this.node.style.left = this.x + "px";
+        if(!this.hit){
+            this.x += this.type == "left" ? this.speed : -this.speed;
+            this.node.style.left = this.x + "px";
+        }
         
         if (this.x <( -2 * this.width) || this.x > (window.innerWidth + this.width + 2)) {
             alive = false;

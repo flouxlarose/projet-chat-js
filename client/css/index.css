@@ -6,8 +6,37 @@ html{
     background-size: cover;
     background-position: center;
 }
+
+input {
+    padding: 5px;
+    font-family: "Starjedi", sans-serif
+}
+
+button{
+    padding: 5px;
+    font-family: "Starjedi", sans-serif;
+    color: red;
+    font-weight: lighter;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    color: yellow;
+    font-family: "Starjedi", sans-serif;
+}
+
+#lien {
+    padding: 5px;
+    font-size: larger;
+}
+
 a {
-    font-size: large;
+    font-size: larger;
     color: yellow;
     font-family: "Starjedi", sans-serif;
 }

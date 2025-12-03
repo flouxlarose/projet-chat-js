@@ -2,10 +2,15 @@
   height: 300px;
   overflow-y: auto;
   background: rgba(0,0,0,0.7);
-  color: white;
   padding: 10px;
   border-radius: 8px;
-  text-align: center;
+  text-align: center; 
+  z-index: 3;
+}
+
+/*  pas mon code...  */
+#chat::-webkit-scrollbar {
+    display: none;
 }
 
 h1 {
@@ -13,6 +18,7 @@ h1 {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
+  z-index: 3;
 }
 
 html, body{
@@ -30,6 +36,7 @@ html, body{
   position: relative;
   overflow: hidden;
   color: yellow;
+  z-index: 0;
 }
 
 .star-destroyer{
@@ -40,7 +47,7 @@ html, body{
   height: 50px;
   top:0px;
   left:0px;
-  z-index: 2;
+  z-index: 0;
 }
 
 #input {
@@ -73,5 +80,11 @@ textarea:focus {
   z-index: 1;
 }
 
-.public { color: yellow; }
-.private { color: red; }
+.publique { 
+  color: yellow; 
+  z-index: 3;
+}
+.prive { 
+  color: red;
+  z-index: 3;
+}
