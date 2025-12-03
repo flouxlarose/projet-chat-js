@@ -19,7 +19,10 @@ const newMessage = (fromUser, message, isPrivate) => {
     else{
         nodeMessage.classList.add("publique");
     }
-    nodeChat.innerHTML += `<div class="${isPrivate ? "private" : "public"}">${fromUser} : ${message}</div>`;
+    nodeMessage.innerText = fromUser + " : " + message;
+    nodeChat.append(nodeMessage);
+
+    nodeChat.scrollTop = nodeChat.scrollHeight;
 
 }
 

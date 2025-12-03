@@ -5,7 +5,40 @@
   color: white;
   padding: 10px;
   border-radius: 8px;
+  text-align: center;
 }
 
-.public { color: #fff; }
-.private { color: #ffd700; }
+h1 {
+  color: yellow;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+html, body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#container{
+  background-color: black;
+  font-family: "Starjedi", sans-serif;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  color: yellow;
+}
+
+.star {
+  position:absolute;
+	top:0px;
+	left:0px;
+	background-color:white;
+  z-index: 1;
+}
+
+.public { color: yellow; }
+.private { color: red; }
